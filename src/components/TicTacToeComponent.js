@@ -21,7 +21,7 @@ class Board extends React.Component {
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
-    squares[i] = this.state.xIsNext ? 'X' : 'O';
+    squares[i] = this.state.xIsNext ? '❌' : '⭕';
     this.setState({
       squares: squares,
       xIsNext: !this.state.xIsNext,
@@ -41,9 +41,9 @@ class Board extends React.Component {
     const winner = calculateWinner(this.state.squares);
     let status;
     if (winner) {
-      status = 'Winner: ' + winner;
+      status = `🎉 Player ${winner} WON!! 🎉`;
     } else {
-      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+      status = 'Next player: ' + (this.state.xIsNext ? '❌' : '⭕');
     }
 
     return (

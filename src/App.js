@@ -10,8 +10,7 @@ import './App.css';
 import LoginPage from './pages/LoginPage';
 import GameSelectionPage from './pages/GameSelectionPage';
 import TicTacToePage from './pages/TicTacToePage';
-
-import Post from './components/Post';
+import TetrisPage from './pages/TetrisPage';
 
 
 function Navigation(props) {
@@ -39,7 +38,9 @@ function App() {
           <Switch>
             <Route path="/login" component={LoginPage} />
             <Route path="/TicTacToe" component= {TicTacToePage}/>
+            <Route path="/Tetris" component={TetrisPage}/>
             <Route path="/" component= {GameSelectionPage}/>
+            
             
           </Switch>
 
