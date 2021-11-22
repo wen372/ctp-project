@@ -1,8 +1,10 @@
 body {
   background: #EAE876;
+  /* #EAE876 */
 }
 .game{
   margin: 0 auto;
+  font-size: 30px;
 }
 
 
@@ -20,16 +22,21 @@ body {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 60px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
-  width: 34px; 
+  height: 15vh;
+  width: 15vw; 
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
   
+}
+
+.square:hover{
+  background-color: #f7f6de;
+  transform: scale(1.05);
 }
 
 .square:focus {
